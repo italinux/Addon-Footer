@@ -1,0 +1,265 @@
+/**
+.---------------------------------------------------------------------.
+|  @package: Lazy Footer (a.k.a. add-on Footer)
+|  @version: v1.0.9 (31 March 2019)
+|  @link:    http://italinux.com/addon-footer
+|  @docs:    http://italinux.com/addon-footer/docs
+|
+|  @author: Matteo Montanari <matteo@italinux.com>
+|  @link:   http://matteo-montanari.com
+'---------------------------------------------------------------------'
+.---------------------------------------------------------------------------.
+| @copyright (c) 2019                                                       |
+| ------------------------------------------------------------------------- |
+| @license: Concrete5.org Marketplace Commercial Add-Ons & Themes License   |
+|           http://concrete5.org/help/legal/commercial_add-on_license       |
+|           or just: file://lazy_footer/LICENSE.TXT                         |
+|                                                                           |
+| This program is distributed in the hope that it will be useful - WITHOUT  |
+| ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or     |
+| FITNESS FOR A PARTICULAR PURPOSE.                                         |
+'---------------------------------------------------------------------------'
+*/
+.single-space-bottom > footer.page-block,
+.double-space-bottom > footer.page-block,
+.no-spaces > footer.page-block,
+.no-space-bottom > footer.page-block {
+  padding-bottom: 0 !important;
+}
+.single-space-top > footer.page-block,
+.double-space-top > footer.page-block,
+.no-spaces > footer.page-block,
+.no-space-top > footer.page-block {
+  padding-top: 0 !important;
+}
+.no-sides-spaces > footer.page-block {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+footer {
+  position: relative;
+  overflow: hidden;
+}
+footer a:not(.CTA-clean).info::after,
+footer a:not(.CTA-clean).goto::after {
+  margin-top: 0px;
+  font-family: "FontAwesome";
+  font-size: 0.8em;
+  text-decoration: none;
+}
+footer a:not(.CTA-clean).info > span,
+footer a:not(.CTA-clean).goto > span {
+  align-self: center;
+}
+footer a:not(.CTA-clean).info::after {
+  content: "\f05a";
+  margin-right: 5px;
+  margin-left: 5px;
+}
+footer a:not(.CTA-clean).goto::after {
+  content: "\f08e";
+  margin-left: 6px;
+  margin-right: 10px;
+}
+footer div.global-cta {
+  margin-top: 4em;
+  margin-bottom: 2em;
+  font-size: 120%;
+  text-align: center;
+}
+footer div.global-cta a.btn {
+  width: 30%;
+}
+footer .btn {
+  max-width: 460px;
+}
+footer .btn.btn-primary[disabled] {
+  cursor: default;
+}
+footer.editMode {
+  border: 1px dashed #bbb;
+}
+footer.page-block {
+  margin: 0px auto;
+  padding: 6em 8%;
+}
+footer.over-image::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+  content: "";
+}
+footer.over-image {
+  background-color: transparent;
+  background-image: url("images/background.png");
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-size: auto;
+  background-position: center center;
+}
+footer.over-image.cfg-color h1 {
+  color: inherit;
+}
+footer.over-image.cfg-color h2 {
+  color: inherit;
+}
+footer.over-image.cfg-color h3 {
+  color: inherit;
+}
+footer.over-image.cfg-color h4 {
+  color: inherit;
+}
+footer.over-image.cfg-color h5 {
+  color: inherit;
+}
+footer.over-image.cfg-color h6 {
+  color: inherit;
+}
+footer.over-image.cfg-color p {
+  color: inherit;
+}
+footer.over-image.cfg-color a:not(.btn) {
+  color: inherit;
+}
+footer div.block-header {
+  position: relative;
+  padding: 0 0 3em;
+  text-align: center;
+  border: none;
+}
+footer .hide {
+  display: none;
+  visibility: hidden;
+}
+footer .show {
+  display: block;
+  visibility: visible;
+}
+footer .single-space-bottom {
+  padding-bottom: 1.8em;
+}
+footer .double-space-bottom {
+  padding-bottom: 3.2em;
+}
+footer .single-space-top {
+  padding-top: 1.8em;
+}
+footer .double-space-top {
+  padding-top: 3.2em;
+}
+footer .no-margins {
+  margin: 0 !important;
+}
+footer .no-paddings {
+  padding: 0 !important;
+}
+footer .no-spaces {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+footer .no-sides-margins {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+footer .no-sides-paddings {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+footer .no-space-bottom {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+footer .no-space-top {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+footer .no-margin-bottom {
+  margin-bottom: 0 !important;
+}
+footer .no-margin-top {
+  margin-top: 0 !important;
+}
+footer .nopaque {
+  opacity: 0;
+}
+footer .opaque {
+  opacity: 1;
+}
+@media screen and (max-width: 1600px) {
+  footer.page-block {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  footer.page-block {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  footer.page-block {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+footer[class^="mobile_view"].page-block {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+@media screen and (max-width: 500px) {
+  footer.page-block {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+footer {
+  width: 100%;
+  text-align: left;
+}
+footer a.info::after,
+footer a.goto::after {
+  display: none;
+}
+footer.over-image {
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+footer div.block-header {
+  padding-bottom: 4em;
+}
+footer div.block-header h5,
+footer div.block-header h6 {
+  font-weight: 300;
+}
+footer q::before {
+  margin-right: 1px;
+  margin-left: -6px;
+}
+footer q::after {
+  margin-right: 1px;
+  margin-right: -6px;
+}
+footer div.credits {
+  opacity: 0.5;
+  margin-left: 10%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: left;
+  font-size: 85%;
+  line-height: 1.2em;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+footer[class^="mobile_view"] div.credits {
+  margin-left: 3%;
+}
+@media screen and (max-width: 500px) {
+  footer div.credits {
+    margin-left: 3%;
+  }
+}
