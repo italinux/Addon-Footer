@@ -2,7 +2,7 @@
 /**
 .---------------------------------------------------------------------.
 |  @package: Lazy Footer (a.k.a. add-on Footer)
-|  @version: v1.0.9 (31 March 2019)
+|  @version: v1.0.9 (20 May 2019)
 |  @link:    http://italinux.com/addon-footer
 |  @docs:    http://italinux.com/addon-footer/docs
 |
