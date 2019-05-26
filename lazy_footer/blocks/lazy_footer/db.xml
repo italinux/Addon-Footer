@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.concrete5.org/doctrine-xml/0.5">
+  <table name="btLazyFooter">
+    <field name="bID" type="integer">
+      <unsigned/>
+      <autoincrement/>
+      <key/>
+    </field>
+    <field name="title" type="string" size="50">
+      <default value=""/>
+    </field>
+    <field name="subtitle" type="string" size="50">
+      <default value=""/>
+    </field>
+    <field name="isQuoted" type="boolean">
+      <unsigned/>
+      <default value="0"/>
+    </field>
+    <field name="credits1stMessage" type="string" size="255">
+      <default value=""/>
+    </field>
+    <field name="credits1stName" type="string" size="30">
+      <default value=""/>
+    </field>
+    <field name="credits1stUrl" type="string" size="255">
+      <default value=""/>
+    </field>
+    <field name="credits2ndMessage" type="string" size="255">
+      <default value=""/>
+    </field>
+    <field name="credits2ndName" type="string" size="30">
+      <default value=""/>
+    </field>
+    <field name="credits2ndUrl" type="string" size="255">
+      <default value=""/>
+    </field>
+   <field name="bgColorRGBA" type="string" size="30">
+      <default value=""/>
+    </field>
+    <field name="bgColorOpacity" type="float" size="3.2">
+      <default value="1.00"/>
+    </field>
+    <field name="bgFID" type="smallint">
+      <unsigned/>
+      <default value="0"/>
+    </field>
+    <field name="fgColorRGB" type="string" size="30">
+      <default value=""/>
+    </field>
+    <field name="isAnimated" type="boolean">
+      <unsigned/>
+      <default value="0"/>
+    </field>
+    <index name="bgFID">
+      <col>bgFID</col>
+    </index>
+  </table>
+</schema>
