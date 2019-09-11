@@ -6,10 +6,10 @@
       <autoincrement/>
       <key/>
     </field>
-    <field name="title" type="string" size="50">
+    <field name="title" type="string" size="250">
       <default value=""/>
     </field>
-    <field name="subtitle" type="string" size="50">
+    <field name="subtitle" type="string" size="250">
       <default value=""/>
     </field>
     <field name="isQuoted" type="boolean">

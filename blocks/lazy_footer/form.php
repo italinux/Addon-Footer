@@ -35,13 +35,13 @@ defined('C5_EXECUTE') or die("Access Denied.");
               <div class="form-group center single-space-top">
                 <?php echo $form->label('title', t('Title: %s', '<span>(' . t('thanks for passing by..') . ')</span>'))?>
                 <div class="input-group center p70">
-                  <?php echo $form->text('title', $title, array('maxlength' => '50'))?>
+                  <?php echo $form->text('title', $title, array('maxlength' => '250'))?>
                 </div>
               </div>
               <div class="form-group center single-space-bottom">
                 <?php echo $form->label('subtitle', t('Subtitle: %s', '<span>(' . t('Come back soon') . ')</span>'))?>
                 <div class="input-group center p90">
-                  <?php echo $form->text('subtitle', $subtitle, array('maxlength' => '50'))?>
+                  <?php echo $form->text('subtitle', $subtitle, array('maxlength' => '250'))?>
                 </div>
               </div>
             </div>
