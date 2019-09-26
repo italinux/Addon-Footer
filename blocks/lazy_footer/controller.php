@@ -247,7 +247,7 @@ class Controller extends BlockController
         // Import Bootstrap CSS framework
         $this->requireAsset('css', 'bootstrap/*');
 
-        if ($this->getIsAnimated() === true && Page::getCurrentPage()->isEditMode() == false) {
+        if ($this->getIsAnimationEnabled() === true) {
             // Import Animations Assets CSS & JS
             $this->requireAsset('jst.animate.assets');
 
