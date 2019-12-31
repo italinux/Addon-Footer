@@ -347,7 +347,7 @@ class Controller extends BlockController
         );
 
         // Register Assets Animate Configuration
-        $al->register('javascript', $this->getJSelectorId() . '.animate-conf', 'blocks/lazy_footer/jscript/lazy-animate.conf.js', $cf, 'lazy_footer');
+        $al->register('javascript', $this->getJSelectorId() . '.animate-conf', 'blocks/lazy_footer/jscript/lazy-animate.conf.js?t=' . $this->getSectionId(), $cf, 'lazy_footer');
         $al->register('javascript-inline', $this->getJSelectorId() . '.animate-init',  '$("section#' . $this->getSectionId()  . '").lazyAnimateInit();', $cf, 'lazy_footer');
 
         $al->registerGroup(
