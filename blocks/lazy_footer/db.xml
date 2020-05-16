@@ -34,7 +34,7 @@
     <field name="credits2ndUrl" type="string" size="255">
       <default value=""/>
     </field>
-   <field name="bgColorRGBA" type="string" size="30">
+    <field name="bgColorRGBA" type="string" size="30">
       <default value=""/>
     </field>
     <field name="bgColorOpacity" type="float" size="3.2">

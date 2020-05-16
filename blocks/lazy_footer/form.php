@@ -35,13 +35,13 @@ defined('C5_EXECUTE') or die("Access Denied.");
               <div class="form-group center single-space-top">
                 <?php echo $form->label('title', t('Title: %s', '<span>(' . t('thanks for passing by..') . ')</span>'))?>
                 <div class="input-group center p70">
-                  <?php echo $form->text('title', $title, array('maxlength' => '250'))?>
+                  <?php echo $form->text('title', $title, array('maxlength' => 250))?>
                 </div>
               </div>
               <div class="form-group center single-space-bottom">
                 <?php echo $form->label('subtitle', t('Subtitle: %s', '<span>(' . t('Come back soon') . ')</span>'))?>
                 <div class="input-group center p90">
-                  <?php echo $form->text('subtitle', $subtitle, array('maxlength' => '250'))?>
+                  <?php echo $form->text('subtitle', $subtitle, array('maxlength' => 250))?>
                 </div>
               </div>
             </div>
@@ -84,7 +84,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
                     <div class="form-group center">
                       <?php echo $form->label('credits1stMessage', t('Credits: %s', '<span>(' . t('to see our Terms & Conditions..') . ')</span>'))?>
                       <div class="input-group">
-                        <?php echo $form->text('credits1stMessage', $credits1stMessage, array('maxlength' => '255'))?>
+                        <?php echo $form->text('credits1stMessage', $credits1stMessage, array('maxlength' => 255))?>
                       </div>
                     </div>
                   </div>
@@ -92,7 +92,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
                     <div class="form-group center no-paddings">
                       <?php echo $form->label('credits1stName', t('Text: %s', '<span>(' . t('click here') . ')</span>'))?>
                       <div class="input-group align-center">
-                        <?php echo $form->text('credits1stName', $credits1stName, array('maxlength' => '255'))?>
+                        <?php echo $form->text('credits1stName', $credits1stName, array('maxlength' => 255))?>
                       </div>
                     </div>
                   </div>
@@ -103,7 +103,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
                     <?php echo $form->label('credits1stUrl', t('Link: %s', '<span>(' . t('http://%1$s.website/%2$s-%3$s-%4$s', t('your'), t('terms'), t('and'), t('conditions')) . ')</span>'))?>
 
                     <div class="input-group center p80">
-                      <?php echo $form->text('credits1stUrl', $credits1stUrl, array('maxlength' => '255', 'placeholder' => t('http://blah-blah.com/%1$s-%2$s', t('new'), t('page'))))?>
+                      <?php echo $form->text('credits1stUrl', $credits1stUrl, array('maxlength' => 255, 'placeholder' => t('http://blah-blah.com/%1$s-%2$s', t('new'), t('page'))))?>
                     </div>
                   </div>
                 </div>
@@ -122,7 +122,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
                     <div class="form-group center">
                       <?php echo $form->label('credits2ndMessage', t('Credits: %s', '<span>(' . t('developed for fun by:') . ')</span>'))?>
                       <div class="input-group">
-                        <?php echo $form->text('credits2ndMessage', $credits2ndMessage, array('maxlength' => '255'))?>
+                        <?php echo $form->text('credits2ndMessage', $credits2ndMessage, array('maxlength' => 255))?>
                       </div>
                     </div>
                   </div>
@@ -130,7 +130,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
                     <div class="form-group center no-paddings">
                       <?php echo $form->label('credits2ndName', t('Name: %s', '<span>(John)</span>'))?>
                       <div class="input-group align-center">
-                        <?php echo $form->text('credits2ndName', $credits2ndName, array('maxlength' => '255'))?>
+                        <?php echo $form->text('credits2ndName', $credits2ndName, array('maxlength' => 255))?>
                       </div>
                     </div>
                   </div>
@@ -141,7 +141,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
                     <?php echo $form->label('credits2ndUrl', t('Link: %s', '<span>(http://my-url.ext)</span>'))?>
 
                     <div class="input-group center p80">
-                      <?php echo $form->text('credits2ndUrl', $credits2ndUrl, array('maxlength' => '255', 'placeholder' => t('http://blah-blah.com/%1$s-%2$s', t('new'), t('page'))))?>
+                      <?php echo $form->text('credits2ndUrl', $credits2ndUrl, array('maxlength' => 255, 'placeholder' => t('http://blah-blah.com/%1$s-%2$s', t('new'), t('page'))))?>
                     </div>
                   </div>
                 </div>
