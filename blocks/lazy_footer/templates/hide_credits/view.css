@@ -6,7 +6,7 @@
 |  @docs:    http://italinux.com/addon-footer/docs
 |
 |  @author: Matteo Montanari <matteo@italinux.com>
-|  @link:   http://matteo-montanari.com
+|  @link:   https://matteo-montanari.com
 '---------------------------------------------------------------------'
 .---------------------------------------------------------------------------.
 | @copyright (c) 2020                                                       |
@@ -35,6 +35,22 @@
 .no-sides-spaces > footer.page-block {
   padding-left: 0px !important;
   padding-right: 0px !important;
+}
+.fix-spaces-buttons footer .btn {
+  white-space: normal;
+}
+.fix-spaces-buttons footer div.global-cta .btn {
+  width: 70%;
+  margin: 0px auto;
+  text-align: center;
+}
+.fix-spaces-buttons footer div.global-cta .btn.goto > span {
+  max-width: 150px;
+  display: inline-block;
+}
+.fix-spaces-buttons footer div.global-cta .btn.goto::after {
+  vertical-align: text-top;
+  margin-right: -10px;
 }
 footer {
   position: relative;
