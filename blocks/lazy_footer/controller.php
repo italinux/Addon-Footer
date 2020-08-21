@@ -324,13 +324,13 @@ class Controller extends BlockController
         /** - - - - - - - - - - - - - - - - - - - - - - - - -
          * Register JS / CSS Animate for this Block
          */
-        $al->register('javascript', 'jt.jquery.waypoints', 'blocks/lazy_footer/jscript/min/jquery.waypoints.min.js', $pf, 'lazy_footer');
+        $al->register('javascript', 'jt.jquery.waypoints', 'blocks/' . $this->getBlockHandle() . '/jscript/min/jquery.waypoints.min.js', $pf, $this->getBlockHandle());
 
         // Register Assets Animate
-        $al->register('javascript', 'animate-lib', 'blocks/lazy_footer/jscript/min/jquery.lazy.animate.min.js', $pf, 'lazy_footer');
+        $al->register('javascript', 'animate-lib', 'blocks/' . $this->getBlockHandle() . '/jscript/min/jquery.lazy.animate.min.js', $pf, $this->getBlockHandle());
 
-        $al->register('css', 'style.animate', 'blocks/lazy_footer/style/animate.min.css', $ph, 'lazy_footer');
-        $al->register('css', 'style.animate.delay', 'blocks/lazy_footer/style/animate.delay.min.css', $ph, 'lazy_footer');
+        $al->register('css', 'style.animate', 'blocks/' . $this->getBlockHandle() . '/style/animate.min.css', $ph, $this->getBlockHandle());
+        $al->register('css', 'style.animate.delay', 'blocks/' . $this->getBlockHandle() . '/style/animate.delay.min.css', $ph, $this->getBlockHandle());
 
         $al->registerGroup(
             'jst.animate.assets', array(
@@ -354,8 +354,8 @@ class Controller extends BlockController
         );
 
         // Register Assets Animate Configuration
-        $al->register('javascript', $this->getJSelectorId() . '.animate-conf', 'blocks/lazy_footer/jscript/lazy-animate.conf.js', $cf, 'lazy_footer');
-        $al->register('javascript-inline', $this->getJSelectorId() . '.animate-init',  '$("section#' . $this->getSectionId()  . '").lazyAnimate(' . $this->getSelectorBlock() . ');', $cf, 'lazy_footer');
+        $al->register('javascript', $this->getJSelectorId() . '.animate-conf', 'blocks/' . $this->getBlockHandle() . '/jscript/lazy-animate.conf.js', $cf, $this->getBlockHandle());
+        $al->register('javascript-inline', $this->getJSelectorId() . '.animate-init',  '$("section#' . $this->getSectionId()  . '").lazyAnimate(' . $this->getSelectorBlock() . ');', $cf, $this->getBlockHandle());
 
         $al->registerGroup(
             'jst.animate.conf', array(
