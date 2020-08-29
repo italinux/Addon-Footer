@@ -610,7 +610,7 @@ class Controller extends BlockController
 
     protected function getPackageHandle()
     {
-        return $this->getBlockObject()->getPackageHandle();
+        return $this->getBlockHandle();
     }
 
     protected function getBlockHandle()
