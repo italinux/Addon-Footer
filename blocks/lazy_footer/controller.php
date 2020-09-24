@@ -248,8 +248,8 @@ class Controller extends BlockController
         // Import Bootstrap CSS framework
         $this->requireAsset('css', 'bootstrap/*');
 
-        // Import this Block CSS view
-        $this->requireAsset('css', self::$btHandlerId . '-view');
+        // Import this Block view Assets (css|js)
+        $this->requireAsset('jst.block.' . $this->getBlockAssetsHandle() . '-view.assets');
 
         /** - - - - - - - - - - - - - - - - - - - - - - - - - - -
         * load assets if animation required:
@@ -303,19 +303,19 @@ class Controller extends BlockController
     {
         $al = AssetList::getInstance();
 
-        $pf = Array(
+        $pf = array(
             'position' => Asset::ASSET_POSITION_FOOTER,
             'minify' => true,
             'combine' => true
         );
 
-        $ph = Array(
+        $ph = array(
             'position' => Asset::ASSET_POSITION_HEADER,
             'minify' => true,
             'combine' => true
         );
 
-        $cf = Array(
+        $cf = array(
             'position' => Asset::ASSET_POSITION_FOOTER,
             'minify' => false,
             'combine' => false
@@ -616,6 +616,11 @@ class Controller extends BlockController
     protected function getBlockHandle()
     {
         return $this->btHandle;
+    }
+
+    protected function getBlockAssetsHandle()
+    {
+        return self::$btHandlerId;
     }
 
     /** - - - - - - - - - - - - - - - - - - - - - - - - - - -
