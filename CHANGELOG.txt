@@ -9,5 +9,5 @@
  ------------------------------------------------
  13/09/2020 , 1.1.4 , FIX Translation language: German / Controller / Assets
  ------------------------------------------------
- 27/04/2021 , 1.1.5 , FIX Blocks Controllers Utils
+ 29/04/2021 , 1.1.5 , FIX Blocks Controllers Utils
  ------------------------------------------------
