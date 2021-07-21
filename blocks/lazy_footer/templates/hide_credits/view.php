@@ -34,13 +34,17 @@ echo $cStyle;
 
     <div class="row main">
       <div class="credits download">
-         <?php echo h($credits1st['text'])?>
+        <?php echo h($credits1st['text'])?>
         <?php echo (trim($credits1st['link']) == false ? $credits1st['name'] : "<a class='" . $credits1st['class'] . "' target='" . $credits1st['target'] . "' href='" . $credits1st['link'] . "'><span>" . h($credits1st['name']) . "</span></a>")?>
       </div>
+
+  <?php if ((trim($credits2nd['text']) != '') || (trim($credits2nd['name']) != '')) {?>
       <div class="credits">
-         <?php echo h($credits2nd['text'])?>
+        <?php echo h($credits2nd['text'])?>
         <?php echo (trim($credits2nd['link']) == false ? $credits2nd['name'] : "<a class='" . $credits2nd['class'] . "' target='" . $credits2nd['target'] . "' href='" . $credits2nd['link'] . "'><span>" . h($credits2nd['name']) . "</span></a>")?>
       </div>
+  <?php } ?>
+
     </div>
   </div>
 </footer>

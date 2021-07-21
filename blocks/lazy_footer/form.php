@@ -68,6 +68,11 @@ defined('C5_EXECUTE') or die("Access Denied.");
 
 <!-- START row-->
           <div class="col-lg-12 wrap-tab-2">
+
+            <div class="single-space-bottom info-items-list-title hide">
+              <h4><?php echo t('all your %s are listed below', t('credits'))?></h4>
+            </div>
+
             <?php
               echo $hUI->tabs(array(
                   array('item_1', t('Credits %s', 1), true),
