@@ -80,7 +80,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
               ));
             ?>
 <!-- Credit one -->
-            <div class="ccm-tab-content" id="ccm-tab-content-item_1">
+            <div class="ccm-tab-content active" id="item_1">
               <fieldset>
                 <legend>&nbsp;</legend>
 
@@ -116,7 +116,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
             </div>
 
 <!-- Credit two -->
-            <div class="ccm-tab-content" id="ccm-tab-content-item_2">
+            <div class="ccm-tab-content" id="item_2">
               <fieldset>
                 <legend class="center-and-bold">
                   <span class="nota-bene"><?php echo t('it shows at the very bottom')?></span>
