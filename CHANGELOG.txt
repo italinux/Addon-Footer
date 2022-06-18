@@ -1,8 +1,6 @@
  Date (d/m/Y) | Version | Description / Comment
  ================================================
 
- 10/05/2016 , 0.9.3 , Added 5 new presets
- ------------------------------------------------
  08/07/2017 , 0.9.8 , FIX Window Overlay / Controller / View
  ------------------------------------------------
  12/06/2018 , 1.0.2 , Added fonts and mixin variables
@@ -13,5 +11,9 @@
  ------------------------------------------------
  10/04/2022 , 1.1.6 , FIX Assets Package / Controller / Block
  ------------------------------------------------
- 02/06/2022 , 1.1.7 , FIX Bootstrap Mobile XS on View / Controller
+ 21/05/2022 , 2.1.7 , Ready for Concrete CMS Version 9
+ ------------------------------------------------
+ 14/06/2022 , 2.1.8 , FIX Window Overlay / Controller / View
+ ------------------------------------------------
+ 18/06/2022 , 2.1.9 , FIX Window Overlay / Controller / View
  ------------------------------------------------
