@@ -403,6 +403,10 @@ class Utils {
                 $li->addClass("hide");
             }
 
+            if ((isset($tab[4]) && $tab[4])) {
+                $li->addClass("only");
+            }
+
             $li->appendChild($a);
             $ul->appendChild($li);
         }
