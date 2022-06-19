@@ -24,6 +24,7 @@
 namespace Concrete\Package\LazyFooter\Block\LazyFooter\Src;
 
 use Concrete\Core\Page\Page;
+use HtmlObject\Element;
 use Concrete\Core\File\File;
 use Concrete\Core\File\Set\Set as FileSet;
 use Concrete\Core\Support\Facade\Application;
@@ -350,5 +351,66 @@ class Utils {
                     )
               )
         );
+    }
+
+    /** - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    * @param $tabs
+    * @param null|string $id
+    *
+    * @return string
+    */
+    public function tabs($tabs, $id = null)
+    {
+        $ul = new Element("ul");
+        $ul->addClass("nav");
+        $ul->addClass("nav-tabs mb-3 nav-fill");
+        $ul->setAttribute("role", "tablist");
+
+        if ($id !== null) {
+            $ul->setAttribute("id", $id);
+        }
+
+        foreach ($tabs as $tab) {
+            $a = new Element("a");
+            $a->addClass("nav-link");
+
+            if ((isset($tab[2]) && $tab[2])) {
+                $a->addClass("active");
+            }
+
+            if (strpos($tab[0], "/") !== false) {
+                $a->setAttribute("href", $tab[0]);
+            } else {
+                $a->setAttribute("href", "#" . $tab[0]);
+                $a->setAttribute("data-bs-toggle", "tab");
+            }
+
+            $a->setAttribute("id", $tab[0] . "-tab");
+            $a->setAttribute("aria-controls", $tab[0]);
+            $a->setAttribute("data-tab", $tab[0]);
+            $a->setAttribute("role", "tab");
+            $a->setAttribute("aria-selected", (isset($tab[2]) && $tab[2]) ? "true" : "false");
+            $a->setValue($tab[1]);
+
+            $li = new Element("li");
+            $li->addClass("nav-item");
+
+            if ((isset($tab[2]) && $tab[2])) {
+                $li->addClass("active");
+            }
+
+            if ((! isset($tab[3]) || (! $tab[3]))) {
+                $li->addClass("hide");
+            }
+
+            if ((isset($tab[4]) && $tab[4])) {
+                $li->addClass("only");
+            }
+
+            $li->appendChild($a);
+            $ul->appendChild($li);
+        }
+
+        return (string)$ul;
     }
 }
