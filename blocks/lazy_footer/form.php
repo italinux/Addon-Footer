@@ -38,17 +38,9 @@ defined('C5_EXECUTE') or die("Access Denied.");
                   <?php echo $form->text('title', $title, array('maxlength' => 250))?>
                 </div>
               </div>
-              <div class="form-group center single-space-bottom">
-                <?php echo $form->label('subtitle', t('Subtitle: %s', '<span>(' . t('Come back soon') . ')</span>'))?>
-                <div class="input-group center p90">
-                  <?php echo $form->text('subtitle', $subtitle, array('maxlength' => 250))?>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-2">
               <div class="form-group center single-margin-top no-paddings">
                 <?php echo $form->label('isQuoted', t('wrap title with Quotes?'))?>
-                <div class="input-group">
+                <div class="input-group center display-inline">
                   <div class="radio">
                     <label>
                       <?php echo $form->radio('isQuoted', 1, (int) $isQuoted)?>
@@ -63,6 +55,12 @@ defined('C5_EXECUTE') or die("Access Denied.");
                   </div>
                 </div>
               </div>
+              <div class="form-group center single-space-bottom">
+                <?php echo $form->label('subtitle', t('Subtitle: %s', '<span>(' . t('Come back soon') . ')</span>'))?>
+                <div class="input-group center p90">
+                  <?php echo $form->text('subtitle', $subtitle, array('maxlength' => 250))?>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -75,12 +73,12 @@ defined('C5_EXECUTE') or die("Access Denied.");
 
             <?php
               echo $hUI->tabs(array(
-                  array('item_1', t('Credits %s', 1), true),
-                  array('item_2', t('Credits %s', 2)),
+                  array('item_1', t('Credits %s', 1), true, true),
+                  array('item_2', t('Credits %s', 2), false, true),
               ));
             ?>
 <!-- Credit one -->
-            <div class="ccm-tab-content" id="ccm-tab-content-item_1">
+            <div class="ccm-tab-content active" id="item_1">
               <fieldset>
                 <legend>&nbsp;</legend>
 
@@ -116,7 +114,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
             </div>
 
 <!-- Credit two -->
-            <div class="ccm-tab-content" id="ccm-tab-content-item_2">
+            <div class="ccm-tab-content" id="item_2">
               <fieldset>
                 <legend class="center-and-bold">
                   <span class="nota-bene"><?php echo t('it shows at the very bottom')?></span>
@@ -166,7 +164,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
                 <div class="col-lg-12">
                   <div class="form-group center light-title no-margins no-sides-paddings double-space-bottom single-space-top">
                     <?php echo $form->label('bgColorRGBA', t('background colour %s', '<br /><span>(' . t('with or without transparency') . ')</span>'))?>
-                    <div class="input-group">
+                    <div class="input-group center p50">
                       <!-- Show a Color Palette in RGB Color Format with Transparency Slider (RGBA) -->
                       <?php $color->output('bgColorRGBA', $bgColorRGBA, $bgColorPalette)?>
                     </div>
@@ -208,7 +206,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
                 <div class="col-lg-12">
                   <div class="form-group center light-title single-space-bottom double-space-top">
                     <?php echo $form->label('fgColorRGB', t('font colour'))?>
-                    <div class="input-group">
+                    <div class="input-group center p50">
                       <!-- Show a Color Palette in RGB Color Format -->
                       <?php $color->output('fgColorRGB', $fgColorRGB, $fgColorPalette)?>
                     </div>
