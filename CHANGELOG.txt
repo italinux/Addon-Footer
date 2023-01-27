@@ -1,8 +1,6 @@
  Date (d/m/Y) | Version | Description / Comment
  ================================================
 
- 08/07/2017 , 0.9.8 , FIX Window Overlay / Controller / View
- ------------------------------------------------
  12/06/2018 , 1.0.2 , Added fonts and mixin variables
  ------------------------------------------------
  13/09/2020 , 1.1.4 , FIX Translation language: German / Controller / Assets
@@ -15,5 +13,7 @@
  ------------------------------------------------
  14/06/2022 , 2.1.8 , FIX Window Overlay / Controller / View
  ------------------------------------------------
- 01/07/2022 , 2.1.9 , FIX Window Overlay / Controller / View
+ 30/12/2022 , 2.1.9 , Ready for PHP Version 8
+ ------------------------------------------------
+ 09/01/2023 , 2.2   , Added 3 new presets
  ------------------------------------------------

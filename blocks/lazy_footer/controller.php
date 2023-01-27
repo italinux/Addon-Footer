@@ -85,6 +85,31 @@ class Controller extends BlockController
     */
     protected $btCacheBlockOutputLifetime = 0;
 
+    // HOT-FIX: PHPv8 Compatibility = ADD properties all btStyles
+    // Set properties: all btStyles
+    protected $bgColorRGBA;
+    protected $bgColorOpacity;
+    protected $bgFID;
+    protected $fgColorRGB;
+    protected $isAnimated;
+    protected $isQuoted;
+
+    // HOT-FIX: PHPv8 Compatibility = ADD properties all btFields
+    // Set properties: all btFields
+    protected $title;
+    protected $subtitle;
+    protected $credits1stMessage;
+    protected $credits1stName;
+    protected $credits1stUrl;
+    protected $credits2ndMessage;
+    protected $credits2ndName;
+    protected $credits2ndUrl;
+
+    /** - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    * Block Fields: (Styles)
+    * @description Labels for additonal Fields
+    * @return array
+    */
     protected static function get_btStyles()
     {
         return array(
@@ -557,7 +582,8 @@ class Controller extends BlockController
             case 'bgColorRGBA':
             case 'fgColorRGB':
                 if (empty($args[$key])) {
-                    $args[$key] = null;
+                    // HOT-FIX: PHPv8 Compatibility REMOVE = null;
+                    $args[$key] = '';
                 }
                 break;
             }
@@ -801,6 +827,10 @@ class Controller extends BlockController
 
         $this->addFormDefaultValues();
         $this->addFormExtraValues();
+
+        // HOT-FIX: PHPv8 Compatibility = ADD set bgColorRGBA & fgColorRGB
+        $this->set('bgColorRGBA', $this->bgColorRGBA);
+        $this->set('fgColorRGB', $this->fgColorRGB);
 
         // Add Assets to Window Overlay
         $this->addLocalAssets('/css/tools/bootstrap-grid.min.css',  'css');
