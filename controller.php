@@ -36,7 +36,7 @@ class Controller extends Package
 {
 
     protected $pkgHandle = 'lazy_footer';
-    protected $pkgVersion = '2.2';
+    protected $pkgVersion = '2.2.1';
 
     protected $appVersionRequired = '9.0';
 
