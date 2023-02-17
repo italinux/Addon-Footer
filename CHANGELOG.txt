@@ -1,8 +1,6 @@
  Date (d/m/Y) | Version | Description / Comment
  ================================================
 
- 13/09/2020 , 1.1.4 , FIX Translation language: German / Controller / Assets
- ------------------------------------------------
  09/08/2021 , 1.1.5 , FIX Assets CSS Package / Blocks
  ------------------------------------------------
  10/04/2022 , 1.1.6 , FIX Assets Package / Controller / Block
@@ -15,5 +13,7 @@
  ------------------------------------------------
  10/02/2023 , 2.2   , Ready for Concrete CMS Version 9
  ------------------------------------------------
- 16/02/2023 , 2.2.1 , Added 3 new presets
+ 17/02/2023 , 2.2.1 , FIX block Assets / View
+ ------------------------------------------------
+ 17/02/2023 , 2.2.2 , FIX Window Overlay / Controller / View
  ------------------------------------------------
