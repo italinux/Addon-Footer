@@ -226,10 +226,11 @@ class Utils {
     public static function getCustomStyleSanitised($buffer)
     {
 
+        /** HOT-FIX: new Marketplace approval guidelines at ConcreteCMS (avoid preg_replace)
         $search = array(
-            '/\}[^\S ]+/s',  /* strip whitespaces after closing tag, except space */
-            '/[^\S ]+\{/s',  /* strip whitespaces before opening tag, except space */
-            '/(\s)+/s'       /* shorten multiple whitespace sequences */
+            '/\}[^\S ]+/s',  // strip whitespaces after closing tag, except space
+            '/[^\S ]+\{/s',  // strip whitespaces before opening tag, except space
+            '/(\s)+/s'       // shorten multiple whitespace sequences
         );
         $replace = array(
             '}',
@@ -237,9 +238,10 @@ class Utils {
             '\\1'
         );
 
-        $o = preg_replace($search, $replace, $buffer);
+        $buffer = preg_replace($search, $replace, $buffer);
+        */
 
-        return $o;
+        return $buffer;
     }
 
     protected static function getRGBColors($rgba)
