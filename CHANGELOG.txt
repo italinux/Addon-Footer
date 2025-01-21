@@ -1,19 +1,19 @@
  Date (d/m/Y) | Version | Description / Comment
  ================================================
 
- 09/08/2021 , 1.1.5 , FIX Assets CSS Package / Blocks
- ------------------------------------------------
- 10/04/2022 , 1.1.6 , FIX Assets Package / Controller / Block
- ------------------------------------------------
- 21/05/2022 , 2.1.7 , Ready for Concrete CMS Version 9
- ------------------------------------------------
- 14/06/2022 , 2.1.8 , FIX Window Overlay / Controller / View
- ------------------------------------------------
- 30/12/2022 , 2.1.9 , Ready for PHP Version 8
- ------------------------------------------------
- 10/02/2023 , 2.2   , Ready for Concrete CMS Version 9
+ 10/01/2025 , 2.2.2 , FIX new Marketplace approval guidelines
  ------------------------------------------------
  17/02/2023 , 2.2.1 , FIX block Assets / View
  ------------------------------------------------
- 02/01/2025 , 2.2.2 , FIX Window Overlay / Controller / View
+ 10/02/2023 , 2.2   , Ready for Concrete CMS Version 9
+ ------------------------------------------------
+ 30/12/2022 , 2.1.9 , Ready for PHP Version 8
+ ------------------------------------------------
+ 14/06/2022 , 2.1.8 , FIX Window Overlay / Controller / View
+ ------------------------------------------------
+ 21/05/2022 , 2.1.7 , Ready for Concrete CMS Version 9
+ ------------------------------------------------
+ 10/04/2022 , 1.1.6 , FIX Assets Package / Controller / Block
+ ------------------------------------------------
+ 09/08/2021 , 1.1.5 , FIX Assets CSS Package / Blocks
  ------------------------------------------------
